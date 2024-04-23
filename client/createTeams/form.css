@@ -1,0 +1,80 @@
+#evalForms {
+    bottom: 0;
+    top: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    background-color: white;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+
+    z-index: 100;
+}
+
+#closeEvalForms {
+    z-index: 20000;
+    top: 11%;
+    bottom: 70%;
+    left: 1%;
+    position: absolute;
+    background-color: lightcoral;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.evaluation-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10000;
+    top: 0px;
+    clear: both;
+    margin: 3% 5% 3% 5%;
+    page-break-inside: avoid; /*This is so that when you save the data to a pdf its not cut off onto another page. THis is optional*/
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+    border: 3px solid black;
+    border-radius: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.evaluation-form p {
+    float: right;
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: 1em;
+}
+
+#printBtn {
+    width: 4em;
+    text-align: center;
+    align-self: center;
+    bottom: 4%;
+}
+
+/*css to make things that shouldn't show up for the print invisible*/
+@media print {
+    #closeEvalForms, #View, #Rbtns, #UpperContent, #printBtn, a.link, #userbox, .evaluation-form h3 {
+        display: none !important;
+    }
+}

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+#headbar {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+#userbox {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+#username {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    padding: 1em;
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+    box-shadow: none;
+}
+#userimage {
+    width: 40px; /* Adjust width of user image as needed */
+    height: 40px; /* Adjust height of user image as needed */
+    border-radius: 50%; /* Ensure circular shape for user image */
+    margin-right: 10px; /* Adjust margin between user image and username as needed */
+}
+#ATClogo {
+    width: 6%;
+    padding: 0.5%;
+}
+#popupFloat {
+    position: absolute;
+    z-index: 5118;
+    width: 21%;
+    min-width: 20em;
+    height: 25%;
+    min-height: 24em;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 8%;
+    border-radius: 20rem 20rem 2rem 2rem;
+    box-shadow: 0px 0px 5px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.buttonsDiv {
+    height: 10%;
+    width: 99%;
+    min-width: 19em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.buttons {
+    height: 70%;
+    width: 50%;
+    min-width: 5em;
+    border: 2px ridge black;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.buttond {
+    min-height: 5%;
+    max-height: 10%;
+    width: 99%;
+    min-width: 19em;
+    border: 2px ridge black;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+.buttond:hover, .buttons:hover {
+    background-color: chartreuse;
+    transition: all .5s;
+}
+#popUser {
+    height: 80%;
+    border: 5px ridge black;
+    border-radius: 12rem;
+    aspect-ratio: 1 / 1;
+}
+#signOutBtn {
+    align-self: flex-end;
+}
+#homeBtn {
+    align-self: flex-end;
+}
+#navLinksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px; /* Adjust margin between links and user info as needed */
+}
+.link {
+    margin-right: 10px; /* Adjust margin between links as needed */
+}
+
+#navLinksContainer a {
+    margin: 0 1em 0 1em;
+    background-color: white;
+    padding: 0.6em;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+#navLinksContainer {
+    align-self: center;
+}

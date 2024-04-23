@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team Page</title>
+    <link rel="stylesheet" href="affect.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header>
+    </header>
+
+    <div id="UpperContent">
+
+    <h1>Manually Create Team</h1>
+
+    <form class="createTeamManuallyForm" id="createTeam" action="">
+        <input type="text" id="teamName" placeholder="Team Name" required> 
+        <div id="members">
+            <div class="member">
+                <input type="text" class="firstName" placeholder="FirstName" required>
+                <input type="text" class="lastName" placeholder="LastName" required>
+                <input type="email" class="schoolEmail" placeholder="schoolEmail" required>
+            </div>
+        </div>
+        <button id="addAnotherMemberBtn">Add Another Member</button>
+        <button type="submit">Create Team</button>
+    </form>
+    
+
+    <h2>Upload CSV File</h2>
+  <form id="uploadForm">
+    <input type="file" name="csvFile" id="csvFileInput" accept=".csv" required>
+    <button class="upload" type="submit">Upload</button>
+  </form>
+  <div id="message"></div>
+
+</div>
+
+    <div class="notes">
+       Almost Done!
+    </div>
+
+    <form id="createTeamForm">
+        <button id="closeModal2" type="button">x</button>
+        <h4 id = "tag1" ></h4>
+        Add Member
+        <input type="text" id="addFirstName" name="FirstName" placeholder="FirstName" required>
+        <input type="text" id="addLastName" name="addLastName" placeholder="LastName" required>
+        <input type="email" id="addSchoolEmail" name="addSchoolEmail" placeholder="schoolEmail" required>
+        <button type="submit" id="addMemberBtn">Add Member</button>
+
+        <h4 id = "tag2" ></h4>
+        Edit Team Name
+        <input type="text" id="editTeamName" name="teamName" placeholder="TeamName" required>
+        <button type="submit" id="editTeamNameBtn">Edit Team Name</button>
+        <h4>Delete Team & Members</h4>
+        <button id="removeTeamBtn">Delete</button>
+    </form>
+
+    <form id="modal1">
+        <button id="closeModal1" type="button">x</button> <!-- button's type to "button", it will behave like a regular button and won't trigger form submission-->
+        <h4 id = "memnam"> Member 1</h4>
+        <input type="textarea" id="editFirstName" value="First Name...">
+        <input type="textarea" id="editLastName" value="Last Name...">
+        <input type="textarea" id="editSchoolEmail" value="School Email...">
+        <button type="submit">submit</button>
+        Remove member from team
+        <button id="removeMember">delete</button>
+    </form>
+
+    <div id="View"></div>
+
+    <div id="Rbtns">
+
+        <button id="removeAllTeams">Remove all Teams</button>
+        <button id="removeAllEvalData">Remove all EvalData</button>
+        <button id="removeAllStudentUsers">Remove all Student Users</button>
+
+    </div>
+    
+    <div id="evalForms"></div>
+    <button id="closeEvalForms">close</button>
+
+    <script src="createTeams.js"></script>
+    <script src="../header/professors/header.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Data</title>
+</head>
+<body>
+
+    <header>
+    </header>
+    
+    <div class="container">
+    <select name="team" id="team"></select>
+    <img src="../images/teamv.png">
+
+    <p>Please conduct an assessment for each member of your project team and offer 
+        feedback to justify your ranking. The objective is to provide constructive 
+        feedback that individuals can utilize to enhance their skills.</p>
+
+    </div>
+
+    <div id="evalContainer">
+        
+        <div id="performanceLevel"></div>
+
+        <div id="reviewerName"></div> <!--users login name -->
+        <div id="subjectName">Team Member Evaluating:</div> 
+        <table id="formData">
+            <thead id="tableHeader">
+                <!-- Table header will be populated dynamically -->
+            </thead>
+            <tbody id="formDataBody">
+                <!-- Table body will be populated dynamically -->
+            </tbody>
+        </table>
+
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+        <button onclick="submitFormData()">Submit</button>
+    </div>
+
+    <h2 id="formSubmissionSuccess">Form Submitted Successfully</h2>
+    <h2 id="formSubmissionFail">Form Failed Submission</h2>
+    
+    <script src="index.js"></script>
+    <script src="../header/students/header.js" defer></script>
+
+</body>
+</html>

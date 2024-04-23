@@ -1,0 +1,143 @@
+body {
+    background: url(./images/Vector.png) no-repeat center center fixed;
+    -moz-background-size: cover;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+}
+header {
+    display: block;
+	padding: 0;
+	margin: 0;
+}
+.userbox {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+#username {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    padding: 1em;
+}
+#headbar a:link, #headbar a:visited {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+.ATCLogo {
+    width: 100px;
+    padding: 1em;
+}
+.pfp {
+    align-self: flex-end;
+}
+
+p.break {
+border: 0.25rem ridge orange;
+border-radius: 1rem;
+width: 100%;
+}
+
+#center, .center {
+    width: 25%;
+    min-width: 20em;
+    height: 27em;
+    border-radius: 2rem;
+    border: 2px solid orange;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: center;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+.teamIndicator {
+    background-color: orange;
+}
+.centerimg {
+    width: 10em;
+    border: 5px ridge black;
+    border-radius: 12em;
+    margin-top: 3em;
+    align-self: center;
+    display: flex;
+}
+#usern {
+    margin-left: 1em;
+    margin-right: 2em;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+}
+.fa {
+    margin-left: 1em;
+    color: black;
+}
+.buttons {
+    height: 2em;
+    width: 10em;
+    margin-top: 1em;
+    border: 2px ridge black;
+}
+#teams {
+    margin-top: 5em;
+    width: 13em;
+    height: 2em;
+    background-color: white;
+}
+.inter {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+}
+.options {
+    background-color: white;
+}
+
+#teamImage {
+    margin: 3em;
+    width: 10em;
+    height: 8em;
+}
+#teamButton {
+    border: none;
+    border-radius: 20px;
+    background-color:
+    rgba(255, 199, 1, 1);
+    width: 20em;
+    height: 2em; 
+}
+#teamText {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*
+Originally in Forgot Password
+*/
+.textbox {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    min-width: 10em;
+    width: 40%;
+    height: 8%;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.submitBtn {
+    width: 30%;
+    height: 8%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+    background-color: orange;
+    text-align: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px 1px 3px gray;
+    border: none;
+}

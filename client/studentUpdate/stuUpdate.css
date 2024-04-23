@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.student-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+    align-self: center;
+    width: fit-content;
+    background-color: #555555;
+    color: white;
+    border: solid 2px orange;
+    border-radius: 0.5rem;
+}
+
+.student-container p {
+    margin-left: 3px;
+}
+
+.students{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: bold;
+}  
+
+span{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    border-radius: 50px;
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 6px 3px 6px 0;
+}
+
+.update{
+    background-color: green;
+    border: solid 1px black;
+    border-radius: 50px;
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
+}

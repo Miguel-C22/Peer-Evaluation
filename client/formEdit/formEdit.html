@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Evaluation Form</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="formEdit.css">
+</head>
+<body>
+    <header></header>
+
+    <div class="center">
+    <h1>Student Evaluation Form</h1>
+    <form id="evaluationForm">
+        <h2>Attributes/Questions</h2>
+        <button class="formButton" type="button" onclick="addAttribute()">Add Attribute/Question</button>
+        <button class="formButton" type="button" onclick="addGrade()">Add Grade/Scoring Option</button>
+        <h2></h2>
+        <div class="container">
+            <div id="attributesContainer">
+            <!-- Attributes/questions will be dynamically added here -->
+            </div>
+            <div id="gradesContainer">
+            <!-- Grades/scoring options will be dynamically added here -->
+            </div>
+        </div>
+
+        <h2></h2>
+        <button class="formButton" type="button" onclick="editForm()">Submit</button>
+        <button class="formButton" type="button" onclick="window.location.href = '/client/createTeams/createTeam.html';">Cancel</button>
+        <h2></h2>
+    </form>
+    </div>
+
+    <script src="formEdit.js"></script>
+    <script src="../header/professors/header.js"></script>
+</body>
+</html>
